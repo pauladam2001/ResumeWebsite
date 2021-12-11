@@ -1,0 +1,65 @@
+.contact-container {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    border-bottom: 0px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    padding: 0rem 0rem;
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+}
+
+.icons-section {
+    display: flex;
+    justify-content: center;
+}
+
+.iconn {
+    cursor: pointer;
+    font-size: x-large;
+    border: none;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+    position: relative;
+    background-color: transparent;
+    padding-right: 10px;
+}
+
+.icon-up {
+    cursor: pointer;
+    font-size: 3rem;
+    border: none;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+    position: relative;
+    background-color: transparent;
+    align-self: center;
+}
+
+.alert {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding-left: 5rem;
+}
+
+@media screen and (max-width: 800px){
+    .contact-container {
+        /* height: 25vh; */
+        padding-top: 1.5rem;
+        padding-left: 1rem;
+    }
+
+    .alert {
+        padding-top: 1.25rem;
+        padding-left: 10rem;
+    }
+}
