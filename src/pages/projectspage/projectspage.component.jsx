@@ -36,6 +36,10 @@ const ProjectsPage = () => {
         }
     }, [])
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <div className={`${isSidebarOpen ? 'main-container sidebar-open-projects' : ' main-container sidebar-closed'}`}>
             <div className='container'>
