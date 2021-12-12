@@ -4,30 +4,29 @@ import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, Ac
 import { RiArrowRightSLine, RiArrowDownSFill } from 'react-icons/ri';
 import Scroll from '../../components/scroll/scroll.component';
 import CardList from '../../components/cardlist/cardlist.component';
-// import projects from '../../data';
+import projects from '../../data';
 import Zoom from 'react-reveal/Zoom';
 import './projectspage.styles.css';
 
 const ProjectsPage = () => {
     const { isSidebarOpen, closeSidebar, showInfo, openInfo, hideInfo } = useGlobalContext();
 
-    const [projectsAPI, setProjectsAPI] = useState([]);
+    // const [projectsAPI, setProjectsAPI] = useState([]);
+    // const fetchProjects = async () => {
+    //     try {
+    //         const response = await fetch('https://projects-data-api.netlify.app/data.json');
+    //         const projectss = await response.json();
+    //         setProjectsAPI(projectss);
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // }
 
-    const fetchProjects = async () => {
-        try {
-            const response = await fetch('https://projects-data-api.netlify.app/data.json');
-            const projectss = await response.json();
-            setProjectsAPI(projectss);
-        } catch (error) {
-            console.log(error);
-        }
-    }
+    // useEffect(() => {
+    //     fetchProjects();
+    // })
 
-    useEffect(() => {
-        fetchProjects();
-    })
-
-    let uniqueTopics = [...new Set(projectsAPI.map((project) => {
+    let uniqueTopics = [...new Set(projects.map((project) => {
         return project.topic;
     }))]
 
@@ -54,7 +53,7 @@ const ProjectsPage = () => {
                                         </AccordionItemHeading>
                                         <AccordionItemPanel className=''>
                                             <Scroll>
-                                                <CardList projects={projectsAPI} topic={topic} />
+                                                <CardList projects={projects} topic={topic} />
                                             </Scroll>
                                         </AccordionItemPanel>
                                     </AccordionItem>
