@@ -1,19 +1,33 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useGlobalContext } from '../../context';
 import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 import { RiArrowRightSLine, RiArrowDownSFill } from 'react-icons/ri';
-// import { GoPrimitiveDot } from 'react-icons/go';
 import Scroll from '../../components/scroll/scroll.component';
 import CardList from '../../components/cardlist/cardlist.component';
-import projects from '../../data';
+// import projects from '../../data';
 import Zoom from 'react-reveal/Zoom';
-// import RubberBand from 'react-reveal/RubberBand';
-// import Fade from 'react-reveal/Fade';
 import './projectspage.styles.css';
 
 const ProjectsPage = () => {
     const { isSidebarOpen, closeSidebar, showInfo, openInfo, hideInfo } = useGlobalContext();
-    let uniqueTopics = [...new Set(projects.map((project) => {
+
+    const [projectsAPI, setProjectsAPI] = useState([]);
+
+    const fetchProjects = async () => {
+        try {
+            const response = await fetch('https://projects-data-api.netlify.app/data.json');
+            const projectss = await response.json();
+            setProjectsAPI(projectss);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    useEffect(() => {
+        fetchProjects();
+    })
+
+    let uniqueTopics = [...new Set(projectsAPI.map((project) => {
         return project.topic;
     }))]
 
@@ -40,7 +54,7 @@ const ProjectsPage = () => {
                                         </AccordionItemHeading>
                                         <AccordionItemPanel className=''>
                                             <Scroll>
-                                                <CardList projects={projects} topic={topic} />
+                                                <CardList projects={projectsAPI} topic={topic} />
                                             </Scroll>
                                         </AccordionItemPanel>
                                     </AccordionItem>
@@ -48,66 +62,6 @@ const ProjectsPage = () => {
                             </div>
                         );
                     })}
-                    {/* <Fade left>
-                        <AccordionItem key={1}>
-                            <AccordionItemHeading >
-                                <AccordionItemButton className='accordion-heading' onClick={showInfo ? hideInfo : openInfo}>
-                                    {showInfo ? <RiArrowDownSFill /> : <RiArrowRightSLine />}
-                                    AA
-                                </AccordionItemButton>
-                            </AccordionItemHeading>
-                            <AccordionItemPanel className=''>
-                                <Scroll>
-                                    <CardList projects={projects} />
-                                </Scroll>
-                            </AccordionItemPanel>
-                        </AccordionItem>
-                    </Fade>
-                    <Fade right>
-                        <AccordionItem key={1}>
-                            <AccordionItemHeading >
-                                <AccordionItemButton className='accordion-heading' onClick={showInfo ? hideInfo : openInfo}>
-                                    {showInfo ? <RiArrowDownSFill /> : <RiArrowRightSLine />}
-                                    AA
-                                </AccordionItemButton>
-                            </AccordionItemHeading>
-                            <AccordionItemPanel className=''>
-                                <Scroll>
-                                    <CardList projects={projects} />
-                                </Scroll>
-                            </AccordionItemPanel>
-                        </AccordionItem>
-                    </Fade>
-                    <Fade left>
-                        <AccordionItem key={1}>
-                            <AccordionItemHeading >
-                                <AccordionItemButton className='accordion-heading' onClick={showInfo ? hideInfo : openInfo}>
-                                    {showInfo ? <RiArrowDownSFill /> : <RiArrowRightSLine />}
-                                    AA
-                                </AccordionItemButton>
-                            </AccordionItemHeading>
-                            <AccordionItemPanel className=''>
-                                <Scroll>
-                                    <CardList projects={projects} />
-                                </Scroll>
-                            </AccordionItemPanel>
-                        </AccordionItem>
-                    </Fade>
-                    <Fade right>
-                        <AccordionItem key={1}>
-                            <AccordionItemHeading >
-                                <AccordionItemButton className='accordion-heading' onClick={showInfo ? hideInfo : openInfo}>
-                                    {showInfo ? <RiArrowDownSFill /> : <RiArrowRightSLine />}
-                                    AA
-                                </AccordionItemButton>
-                            </AccordionItemHeading>
-                            <AccordionItemPanel className=''>
-                                <Scroll>
-                                    <CardList projects={projects} />
-                                </Scroll>
-                            </AccordionItemPanel>
-                        </AccordionItem>
-                    </Fade>*/}
                 </Accordion>
             </div >
         </div >
