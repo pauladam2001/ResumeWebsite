@@ -53,7 +53,6 @@
 
 @media screen and (max-width: 800px){
     .contact-container {
-        /* height: 25vh; */
         padding-top: 3rem;
         padding-left: 1rem;
     }

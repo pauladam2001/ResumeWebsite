@@ -37,7 +37,7 @@ const AppProvider = ({ children }) => {
     // const fetchProjects = async () => {
     //     try {
     //         const response = await fetch(url, {
-    //             mode: 'no-cors'                                  // try when it is up and running
+    //             mode: 'no-cors'       
     //         });
     //         const data = await response.json();
     //         console.log(data);

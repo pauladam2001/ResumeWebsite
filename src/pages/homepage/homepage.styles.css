@@ -13,10 +13,7 @@
 }
 
 .sidebar-open {
-    /* margin-right: 250px; */
     background-color: rgba(0, 0, 0, 0.3);
-    /* background-image: linear-gradient(to right top, #0f513f, #0f503d, #104f3a, #104d38, #114c35, #114830, #10442b, #104026, #0e391f, #0d3218, #0b2c11, #0a2507); */
-    /* transition: margin-right 0.5s; */
 }
 
 .sidebar-closed {
