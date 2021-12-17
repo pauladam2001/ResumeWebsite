@@ -8,7 +8,7 @@ const projects = [
     },
     {
         id: 2,
-        topic: 'React',
+        topic: 'Node',
         title: 'Face Recognition App - Backend',
         image: 'https://cdn0.iconfinder.com/data/icons/essentials-9/128/__Share-256.png',
         github: 'https://github.com/pauladam2001/facerecognition-api'
@@ -26,6 +26,13 @@ const projects = [
         title: 'RoboFriends',
         image: 'https://robohash.org/dfdssssasdwe',
         github: 'https://github.com/pauladam2001/RoboFriends'
+    },
+    {
+        id: 16,
+        topic: 'React + Node',
+        title: 'Chat Application',
+        image: 'https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-15-256.png',
+        github: 'https://github.com/pauladam2001/ChatApplication'
     },
     {
         id: 5,
@@ -54,6 +61,20 @@ const projects = [
         title: 'Library App',
         image: 'https://cdn1.iconfinder.com/data/icons/locations-redesign/48/Library-256.png',
         github: 'https://github.com/pauladam2001/BookLibraryApplication'
+    },
+    {
+        id: 14,
+        topic: 'Node',
+        title: 'Book Directory REST API',
+        image: 'https://cdn0.iconfinder.com/data/icons/thin-line-icons-for-seo-and-development-1/64/Programming_Development_Api-256.png',
+        github: 'https://github.com/pauladam2001/BookDirectoryREST_API'
+    },
+    {
+        id: 15,
+        topic: 'Node',
+        title: 'Passport Login',
+        image: 'https://cdn4.iconfinder.com/data/icons/hodgepodge-free/32/login_account_enter_door-256.png',
+        github: 'https://github.com/pauladam2001/Node-Passport_Login'
     },
     {
         id: 9,
