@@ -35,6 +35,13 @@ const projects = [
         github: 'https://github.com/pauladam2001/ChatApplication'
     },
     {
+        id: 17,
+        topic: 'React + Solidity',
+        title: 'ETH Trading',
+        image: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/116_Ethereum_logo_logos-256.png',
+        github: 'https://github.com/pauladam2001/ETHTrading'
+    },
+    {
         id: 5,
         topic: 'Python',
         title: 'RockPaperScissors AI',
