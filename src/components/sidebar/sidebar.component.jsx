@@ -19,7 +19,7 @@ const Sidebar = () => {
                 Home
             </Link>
             <Link to='/projects' className='link'>
-                Personal Projects
+                Projects & Tutorials
             </Link>
             <a href={Pdf} target='_blank' rel='noreferrer' className='link'>Resume</a>
         </div>

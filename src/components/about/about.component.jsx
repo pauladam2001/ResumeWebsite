@@ -15,11 +15,14 @@ const About = () => {
             <div className='about-section'>
                 <Fade bottom>
                     <img src={Picture} alt='Logo' className='logo' />
-                    <p className='about-paragraph'><span>&nbsp;&nbsp;</span>I am a second year Computer Science student at Babes-Bolyai University. <br />
-                        <span>&nbsp;&nbsp;</span>My main passions are sports and programming and I
-                        consider myself an energetic, communicative and open person who is dedicated to delivering work on time.<br />
-                        <span>&nbsp;&nbsp;</span>I can't wait
-                        to start working in this domain and to improve my programming skills.
+                    <p className='about-paragraph'>
+                        &nbsp;&nbsp; I am a second-year Computer Science student at Babes-Bolyai University. <br /><br />
+
+                        &nbsp;&nbsp; With a strong passion for sports and programming, I am energetic, communicative and open to all opportunities that lead to personal and professional growth. <br /><br />
+
+                        &nbsp;&nbsp; As much as I am dedicated and serious when it comes to work and meeting standards, I am a spirit-lifter and love to bring humor inside any group. <br /><br />
+
+                        &nbsp;&nbsp; I can't wait to hop on board in the IT indsutry and bring some ideas to life.
                     </p>
                 </Fade>
             </div>

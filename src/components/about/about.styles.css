@@ -32,12 +32,12 @@
 }
 
 .about-paragraph {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
     margin-bottom: 3.2rem;
     text-align: left;
     padding-top: 5rem;
-    padding-right: 13rem; 
+    padding-right: 5rem; 
 } 
 
 @media screen and (max-width: 800px) {
@@ -63,7 +63,7 @@
     }
 
     .about-paragraph {
-        font-size: 1.17rem;
+        font-size: 0.9rem;
         padding-top: 0rem;
         padding-bottom: 2rem;
         padding-left: 1.4em;
