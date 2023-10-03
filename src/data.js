@@ -1,5 +1,19 @@
 const projects = [
     {
+        id: 17,
+        topic: 'Ruby on Rails - Diploma Thesis',
+        title: 'BikeFiesta - A marketplace for used bicycles',
+        image: 'https://cdn2.iconfinder.com/data/icons/vehicles-7/24/vehicles-16-512.png',
+        github: 'https://github.com/pauladam2001/BikeFiesta-DiplomaThesis'
+    },
+    {
+        id: 18,
+        topic: 'Ruby on Rails - Diploma Thesis',
+        title: 'Image Classification and Face Extraction APIs',
+        image: 'https://cdn0.iconfinder.com/data/icons/pinpoint-interface/48/profile-512.png',
+        github: 'https://github.com/pauladam2001/ImageClassificationAndFaceExtractionAPIs-DiplomaThesis'
+    },
+    {
         id: 1,
         topic: 'React',
         title: 'Face Recognition App',

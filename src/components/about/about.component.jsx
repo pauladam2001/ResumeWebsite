@@ -16,13 +16,9 @@ const About = () => {
                 <Fade bottom>
                     <img src={Picture} alt='Logo' className='logo' />
                     <p className='about-paragraph'>
-                        &nbsp;&nbsp; I am a second-year Computer Science student at Babes-Bolyai University. <br /><br />
-
-                        &nbsp;&nbsp; With a strong passion for sports and programming, I am energetic, communicative and open to all opportunities that lead to personal and professional growth. <br /><br />
-
-                        &nbsp;&nbsp; As much as I am dedicated and serious when it comes to work and meeting standards, I am a spirit-lifter and love to bring humor inside any group. <br /><br />
-
-                        &nbsp;&nbsp; I can't wait to hop on board in the IT indsutry and bring some ideas to life.
+                        I am Ruby on Rails Engineer with nearly two years of hands-on experience in developing robust web applications. I'm a Computer Science graduate from Babes-Bolyai University, currently pursuing a master's degree in Entrepreneurship and Business Administration. <br /> <br />
+                        Because I'm passionate about sports and programming, I bring that enthusiasm to work every day. I make sure to stay energized, communicate effectively, and I'm always up for any opportunity that helps me grow, both personally and professionally. <br /> <br />
+                        I take my work seriously, but I also enjoy adding humor and positivity to the team. It makes the workplace a friendlier and more enjoyable environment.
                     </p>
                 </Fade>
             </div>

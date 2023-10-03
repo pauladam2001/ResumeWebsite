@@ -20,7 +20,7 @@ const Contact = () => {
     return (
         <div id='contact' className='contact-container'>
             <Fade bottom big cascade>
-                <div classNam='icons-section'>
+                <div>
                     <a href='https://github.com/pauladam2001' target='_blank' className='iconn'>
                         <BsGithub style={{ color: "white" }} />
                     </a>
@@ -45,6 +45,9 @@ const Contact = () => {
                     {alert && <p className='alert'>Address copied to clipboard!</p>}
                 </div>
             </Fade>
+            <div className='year-container'>
+                Designed and developed in 2021.
+            </div>
         </div>
     );
 }

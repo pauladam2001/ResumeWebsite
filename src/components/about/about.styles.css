@@ -32,13 +32,13 @@
 }
 
 .about-paragraph {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 400;
     margin-bottom: 3.2rem;
     text-align: left;
     padding-top: 5rem;
-    padding-right: 5rem; 
-} 
+    padding-right: 5rem;
+}
 
 @media screen and (max-width: 800px) {
     .title-container {

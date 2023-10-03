@@ -1,10 +1,10 @@
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to right top, #107157, #156e4f, #1a6a46, #1f673e, #236335, #235a2e, #225128, #204822, #1a381c, #152a16, #0f1b0f, #030b03);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(to right top, #107157, #156e4f, #1a6a46, #1f673e, #236335, #235a2e, #225128, #204822);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
 }

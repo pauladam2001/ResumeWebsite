@@ -2,7 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans Condensed', sans-serif;
     color: white;
-    background-image: linear-gradient(to right top, #107157, #156e4f, #1a6a46, #1f673e, #236335, #235a2e, #225128, #204822, #1a381c, #152a16, #0f1b0f, #030b03);
+    background-image: linear-gradient(to right top, #107157, #156e4f, #1a6a46, #1f673e, #236335, #235a2e, #225128, #204822);
 }
 
 body::-webkit-scrollbar-track {

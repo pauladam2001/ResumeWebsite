@@ -18,7 +18,7 @@ const Hero = () => {
                             Hello, my name is <span className='title-color'>Adam Paul Adrian</span>.
                         </h1>
                         <h1 className='hero-title title'>
-                            I'm a Computer Science Student.
+                            I'm a <span className='role-text'>Ruby on Rails Engineer</span>.
                         </h1>
                     </div>
                 </Fade>

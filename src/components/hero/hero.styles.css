@@ -22,7 +22,14 @@
 }
 
 .title-color {
-    color: black;
+    color: #023020;
+    font-weight: 600;
+}
+
+.role-text {
+    text-decoration: underline;
+    text-decoration-thickness: 0.05em;
+    text-underline-offset: 0.1em;
 }
 
 .logo {
@@ -57,7 +64,7 @@
     text-align: center;
     transition: 0.5s;
     background-size: 200% auto;
-    color: black;            
+    color: black;
     box-shadow: 0 0 20px #eee;
     border-radius: 25px;
     display: block;
@@ -65,10 +72,10 @@
 }
 
 .btn-grad:hover {
-   background-position: right center;
-   color: #fff;
-   cursor: pointer;
-} 
+    background-position: right center;
+    color: #fff;
+    cursor: pointer;
+}
 
 .btn-container {
     display: flex;
@@ -118,4 +125,4 @@
     .btn-container {
         padding-left: 2em;
     }
- }
+}
