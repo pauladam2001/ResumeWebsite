@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { IoMdClose } from 'react-icons/io';
 import { useGlobalContext } from '../../context';
 
-import Pdf from '../../assets/resume.pdf';
+import Pdf from '../../assets/Resume_Adam_Paul.pdf';
 
 import './sidebar.styles.css';
 
