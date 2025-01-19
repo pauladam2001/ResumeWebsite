@@ -27,9 +27,6 @@ const Contact = () => {
                     <a href='https://www.linkedin.com/in/pauladam2001/' target='_blank' className='iconn'>
                         <BsLinkedin style={{ color: "white" }} />
                     </a>
-                    <a href='https://www.facebook.com/paul.adrian.5648' target='_blank' className='iconn'>
-                        <BsFacebook style={{ color: "white" }} />
-                    </a>
                     <button className='iconn' onClick={() => {
                         showAlert();
                         navigator.clipboard.writeText('paul.adrian2001@yahoo.com');
